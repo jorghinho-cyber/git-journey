@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dae Jorghinho | Software Engineer</title>
+<meta name="description" content="Portfolio of Dae Jorghinho, a Software Engineer building modern, responsive and functional web products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading screen -->
+<div class="loader" id="loader"><span class="loader-mark">DJ</span><span class="loader-bar"></span></div>
+
+<div class="progress" id="progress"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo">DAE <span>JORGHINHO</span></a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav>
+    <ul class="menu" id="menu">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">What I Do</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#goal">My Goal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero-text">
+    <p class="hello">Hello, I'm</p>
+    <h1 class="reveal-text">DAE JORGHINHO</h1>
+    <h2>SOFTWARE ENGINEER</h2>
+    <p class="typing">I am a <span id="typing"></span><span class="caret">|</span></p>
+    <p class="lead">I build modern, responsive and functional digital experiences using technology.</p>
+    <p class="muted">I am a frontend developer and junior backend developer, passionate about software development, web development, problem solving and building useful digital products.</p>
+    <div class="btns">
+      <a href="#projects" class="btn btn-gold">View my work</a>
+      <a href="#contact" class="btn btn-outline">Contact me</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="ring"></div>
+    <!-- Replace the placeholder below with: <img src="your-photo.jpg" alt="Dae Jorghinho"> -->
+    <div class="photo"><span>DJ</span></div>
+  </div>
+  <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2 class="title reveal">About me</h2>
+  <div class="about-wrap">
+    <div class="reveal">
+      <p>I am a Software Engineering student and aspiring professional developer, improving my skills every day through projects and practical development.</p>
+      <ul class="passions">
+        <li>Web Development</li><li>Software Engineering</li><li>Problem Solving</li>
+        <li>Learning New Technologies</li><li>Building Real-World Applications</li>
+      </ul>
+      <h3 class="learn-title">What I am learning</h3>
+      <ul class="passions">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React (JSX)</li><li>PHP</li>
+      </ul>
+      <div class="counters">
+        <div><b class="count" data-target="20">0</b><small>Projects built</small></div>
+        <div><b class="count" data-target="9">0</b><small>Technologies</small></div>
+        <div><b class="count" data-target="100">0</b><small>% Commitment</small></div>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skill reveal"><span>HTML</span><i data-level="90"></i><em>90%</em></div>
+      <div class="skill reveal"><span>CSS</span><i data-level="85"></i><em>85%</em></div>
+      <div class="skill reveal"><span>JavaScript</span><i data-level="80"></i><em>80%</em></div>
+      <div class="skill reveal"><span>React (JSX)</span><i data-level="60"></i><em>60%</em></div>
+      <div class="skill reveal"><span>Python</span><i data-level="70"></i><em>70%</em></div>
+      <div class="skill reveal"><span>PHP</span><i data-level="70"></i><em>70%</em></div>
+      <div class="skill reveal"><span>Laravel</span><i data-level="65"></i><em>65%</em></div>
+      <div class="skill reveal"><span>Git &amp; GitHub</span><i data-level="75"></i><em>75%</em></div>
+      <div class="skill reveal"><span>Databases</span><i data-level="75"></i><em>75%</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section id="services" class="section alt">
+  <h2 class="title reveal">What I do</h2>
+  <div class="cards">
+    <article class="card tilt reveal"><div class="icon">&lt;/&gt;</div><h3>Frontend Development</h3><p>Building responsive, modern and interactive user interfaces.</p></article>
+    <article class="card tilt reveal"><div class="icon">{ }</div><h3>Backend Development</h3><p>As a junior backend developer, I create functional server-side applications and APIs with PHP.</p></article>
+    <article class="card tilt reveal"><div class="icon">&#9707;</div><h3>Database Management</h3><p>Working with databases and organizing application data efficiently.</p></article>
+    <article class="card tilt reveal"><div class="icon">&#9638;</div><h3>Web Applications</h3><p>Building practical web applications that solve real problems.</p></article>
+    <article class="card tilt reveal"><div class="icon">&#9881;</div><h3>Software Development</h3><p>Developing software solutions with clean and maintainable code.</p></article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="title reveal">Projects</h2>
+  <div class="filters reveal" role="group" aria-label="Filter projects">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="web">Web</button>
+    <button class="filter" data-filter="javascript">JavaScript</button>
+    <button class="filter" data-filter="react">React</button>
+    <button class="filter" data-filter="php">PHP</button>
+    <button class="filter" data-filter="python">Python</button>
+  </div>
+  <div class="cards projects" id="projectGrid">
+    <!-- Replace each placeholder: image, name, text, links -->
+    <article class="card project" data-cat="web javascript">
+      <div class="thumb"><span>Project image</span></div>
+      <h3>Business Website</h3><p>A responsive company website with a clean, fast layout.</p>
+      <p class="tags">HTML · CSS · JavaScript</p>
+      <div class="btns"><a href="#" class="btn btn-gold sm">View project</a><a href="#" class="btn btn-outline sm">GitHub</a></div>
+    </article>
+    <article class="card project" data-cat="react web">
+      <div class="thumb"><span>Project image</span></div>
+      <h3>Task Dashboard</h3><p>A React dashboard to plan, track and finish daily tasks.</p>
+      <p class="tags">React · CSS</p>
+      <div class="btns"><a href="#" class="btn btn-gold sm">View project</a><a href="#" class="btn btn-outline sm">GitHub</a></div>
+    </article>
+    <article class="card project" data-cat="php web">
+      <div class="thumb"><span>Project image</span></div>
+      <h3>Student Portal</h3><p>A Laravel and PHP portal for managing student records.</p>
+      <p class="tags">PHP · Laravel · MySQL</p>
+      <div class="btns"><a href="#" class="btn btn-gold sm">View project</a><a href="#" class="btn btn-outline sm">GitHub</a></div>
+    </article>
+    <article class="card project" data-cat="python">
+      <div class="thumb"><span>Project image</span></div>
+      <h3>Data Helper</h3><p>A Python tool that cleans and summarizes data files.</p>
+      <p class="tags">Python</p>
+      <div class="btns"><a href="#" class="btn btn-gold sm">View project</a><a href="#" class="btn btn-outline sm">GitHub</a></div>
+    </article>
+    <article class="card project" data-cat="javascript">
+      <div class="thumb"><span>Project image</span></div>
+      <h3>Quiz Game</h3><p>An interactive JavaScript quiz with scores and timers.</p>
+      <p class="tags">JavaScript · HTML · CSS</p>
+      <div class="btns"><a href="#" class="btn btn-gold sm">View project</a><a href="#" class="btn btn-outline sm">GitHub</a></div>
+    </article>
+    <article class="card project" data-cat="react javascript web">
+      <div class="thumb"><span>Project image</span></div>
+      <h3>Weather App</h3><p>A React app that shows live weather for any city.</p>
+      <p class="tags">React · API</p>
+      <div class="btns"><a href="#" class="btn btn-gold sm">View project</a><a href="#" class="btn btn-outline sm">GitHub</a></div>
+    </article>
+  </div>
+</section>
+
+<!-- MY GOAL -->
+<section id="goal" class="section alt">
+  <h2 class="title reveal">My goal</h2>
+  <p class="center reveal">My goal is to become a highly skilled Software Engineer who builds useful, scalable and impactful digital products.</p>
+  <blockquote class="quote reveal">My goal is not just to write code. My goal is to use technology to solve problems, create opportunities and build products that make an impact.</blockquote>
+  <ol class="timeline">
+    <li class="step"><b>Learning</b></li>
+    <li class="step"><b>Building</b></li>
+    <li class="step"><b>Improving</b></li>
+    <li class="step"><b>Professional development</b></li>
+    <li class="step"><b>Impact</b></li>
+  </ol>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="title reveal">Let's build something great</h2>
+  <p class="center reveal">Employers, developers, clients and collaborators: send me a message and I will reply as soon as I can.</p>
+  <div class="contact-wrap">
+    <form id="form" class="reveal" novalidate>
+      <label>Name<input type="text" id="name" autocomplete="name"><small class="err"></small></label>
+      <label>Email<input type="email" id="email" autocomplete="email"><small class="err"></small></label>
+      <label>Subject<input type="text" id="subject"><small class="err"></small></label>
+      <label>Message<textarea id="message" rows="5"></textarea><small class="err"></small></label>
+      <button type="submit" class="btn btn-gold">Send message</button>
+      <p id="formMsg" role="status"></p>
+    </form>
+    <ul class="info reveal">
+      <li><a href="mailto:georgeanyanwu316@gmail.com"><span class="ico">@</span>georgeanyanwu316@gmail.com</a></li>
+      <li><a href="https://github.com/jorghinho-cyber" target="_blank" rel="noopener"><span class="ico">GH</span>github.com/jorghinho-cyber</a></li>
+      <li><a href="tel:+2348103212202"><span class="ico">&#9742;</span>08103212202</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><p>&copy; <span id="year"></span> Dae Jorghinho. All rights reserved.</p></footer>
+<button class="top" id="top" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
